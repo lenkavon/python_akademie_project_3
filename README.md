@@ -14,21 +14,34 @@ if you already have local env you can just start it with
 ```bash
 source projekt3/bin/activate
 ```
-for runnning the streamlit app -run 
+project is run from main function in file: 
+
 ```bash
-streamlit run {path/to/project/}result_visualiser.py 
-````
-#### First time (mac)
+scrape_election_results.py
+```
+
+### First time 
 - create and start the virtual env
 
 ```bash
 python<version> -m venv projekt3
+
+```
+#### start venv
+(mac+linux)
+```bash
 source projekt3/bin/activate
 ```
+
+```bash
+projekt3\Scripts\Activate.ps1
+```
+
 - see if it was setup properly
 ```bash
 pip list
 ```
+
 - install dependencies
 ```bash
 pip install -r requirements.txt
@@ -39,19 +52,19 @@ pip install -r requirements.txt
 deactivate
 ```
 
-### How to run the scraper
-
-```bash 
-election_results()
-```
-
 ## Komentar k reseni
 
 nejak mi nesedi, ze to neni genericke reseni, ale asi to ani jinak nejde, kdyz se zmeni struktura stranky, tak se musi zmenit i kod. 
 tentokrat jsem nechala cely scraper v jednom souboru, aby se snaze kontroloval. 
 neresila jsem zahranici - bylo by to podobne reseni jako pro obce.
-neresila jsem testy. 
-chtela jsem si vyzkouset streamlit - pridavam applikaci s grafem a inputem
+neresila jsem testy.
+
+~~chtela jsem si vyzkouset streamlit - pridavam applikaci s grafem a inputem~~
+
+edit: 13.3. zmeny na zaklade feedbacku
+- readme rozsirene o dalsi OS
+- odebrana streamlit app (puvodne se link a vysledna cesta zadavala do inputu ve streamlit appce, predelano na terminalove reseni, uprime me scrapovani moc nebavilo, mela jsem velky problem se do toho dokopat tak jsem si aspon vymyslela tu streamlit app, abych mela motivaci se do toho pustit, ostatni projkty byly super. Mozna bych jako finalni projekt vice ocenila praci s api nebo nejakou example DB) 
+
 
 
 ## Zadání projektu
